@@ -147,6 +147,42 @@ hr {
   background-color: var(--off-white);
 }
 
+/* Thank you blog */
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+  .reply {
+    margin-left: 100px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .reply {
+    margin-left: 200px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  .reply {
+    margin-left: 400px;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+  .reply {
+    margin-left: 500px;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .reply {
+    margin-left: 600px;
+  }
+}
+
 /** footers **/
 
 .footer {

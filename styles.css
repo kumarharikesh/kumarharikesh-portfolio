@@ -140,8 +140,9 @@ hr {
   text-align: center;
 }
 
-.section h1 {
-  text-align: center;
+.section > div > h1,
+.section > div > p {
+  text-align: left;
 }
 
 .ow {

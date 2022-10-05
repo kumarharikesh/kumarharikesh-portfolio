@@ -75,7 +75,14 @@ hr {
   list-style: none;
   padding-inline-start: 0px;
 }
-
+.list-non-bullet > li > article > h1,
+.list-non-bullet > li > article > div,
+.list-non-bullet > li > article > p {
+  text-align: left;
+}
+.list-non-bullet > li > article > p {
+  padding-left: 11px;
+}
 .list-item-inline {
   display: inline;
   padding: 0rem 0.5rem;

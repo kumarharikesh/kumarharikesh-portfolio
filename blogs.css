@@ -181,7 +181,7 @@ hr {
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
   .reply {
-    margin-left: 600px;
+    margin-left: 700px;
   }
 }
 

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #7fb73a;
+  --off-white: #e9eef8;
+  --dark-gray: #6b7280;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px auto;
+  width: 100%;
+}
+
+hr {
+  margin: 2rem 0rem;
+}
+
+/** spaces **/
+
+.margin-md {
+  margin: 2rem;
+}
+
+/** container **/
+.container {
+  padding: 0rem 1rem;
+}
+
+.container-center {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+/** links **/
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.link-primary {
+  max-width: 140px;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  transition: 0.8s;
+}
+
+.link-secondary {
+  max-width: 140px;
+  margin: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+
+.link-primary:hover{
+  background-color: #2c4a09;
+}
+.link-secondary:hover{
+  background-color: #6068563f;
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+.navigation {
+  background: -moz-linear-gradient(top, #7fb73a, skyblue);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7fb73a), to(rgb(157, 203, 221)));
+ 
+ -moz-box-shadow: 1px 1px 3px #292929;
+ -webkit-box-shadow: 1px 1px 3px #292929;
+ box-shadow: 1px 1px 3px #292929;
+ color: #454545;
+ text-shadow: 0 1px 0 white;
+ padding: 1rem;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+  margin: 0.6rem 1rem;
+}
+
+.navigation .link {
+  color: black;
+}
+
+.navigation .link-active {
+  font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+  padding: 2rem;
+}
+
+.hero .hero-img {
+  max-width: 80%;
+  width: 550px;
+  display: block;
+  margin: auto;
+}
+
+.hero .hero-heading {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted {
+  color: var(--primary-color);
+}
+
+/** sections **/
+
+.section {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.ow {
+  background-color: var(--off-white);
+}
+
+/** footers **/
+
+.footer {
+  background-color: #5e832d;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.footer .link {
+  color: white;
+  transition: 0.3s;
+}
+.footer .link:hover {
+  color: rgba(255, 255, 255, 0.621);
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+/** projects **/
+.showcase-list {
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 3rem auto;
+}
+.showcase-list h1 {
+  margin: 0.5rem;
+}
+
+.showcase-list p {
+  padding-bottom: 1rem;
+}
+
+/** blogs **/
+
+.showcase-blog {
+  padding-bottom: 6rem;
+}
+
+  .list-item-inline {
+    display: inline;
+    padding: 0rem;
+  }
+
+  .container-center {
+    width: auto;
+  }
+
+  .link-primary {
+    display: block;
+  }

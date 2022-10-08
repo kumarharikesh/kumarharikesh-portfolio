@@ -212,6 +212,9 @@ hr {
     margin-right: 1rem;
   }
 }
+#blogs {
+  padding-bottom: 2rem;
+}
 
 .showcase-list h1 {
   margin: 0.5rem;

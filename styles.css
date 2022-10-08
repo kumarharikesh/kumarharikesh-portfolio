@@ -3,6 +3,7 @@
 :root {
   --primary-color: #7fb73a;
   --off-white: #e9eef8;
+  --off-black: #eef1d2;
   --dark-gray: #6b7280;
 }
 
@@ -166,6 +167,9 @@ hr {
 
 .ow {
   background-color: var(--off-white);
+}
+.ow2 {
+  background-color: var(--off-black);
 }
 
 /** footers **/

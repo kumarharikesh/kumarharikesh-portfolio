@@ -167,9 +167,11 @@ hr {
 
 .ow {
   background-color: var(--off-white);
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 66%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 .ow2 {
   background-color: var(--off-black);
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 66%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 /** footers **/

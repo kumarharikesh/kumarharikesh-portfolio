@@ -194,6 +194,7 @@ hr {
 @media (max-width: 990px){
   .showcase-list {
     padding: 1rem;
+    padding-bottom: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
   }

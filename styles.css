@@ -205,6 +205,14 @@ hr {
   text-align: center;
   margin: 3rem auto;
 }
+@media (min-width: 480px) and (max-width: 990px){
+  .showcase-list {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 .showcase-list h1 {
   margin: 0.5rem;
 }

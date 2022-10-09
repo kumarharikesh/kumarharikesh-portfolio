@@ -3,6 +3,7 @@
 :root {
   --primary-color: #7fb73a;
   --off-white: #e9eef8;
+  --off-black: #eef1d2;
   --dark-gray: #6b7280;
 }
 
@@ -147,7 +148,13 @@ hr {
 
 .ow {
   background-color: var(--off-white);
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
+.ow2 {
+  background-color: var(--off-black);
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
 
 /* Thank you blog */
  /* Media Query for Mobile Devices */
@@ -217,6 +224,15 @@ hr {
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
+  margin: 3rem auto;
+}
+@media (max-width: 990px){
+  .showcase-list {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 .showcase-list h1 {
   margin: 0.5rem;

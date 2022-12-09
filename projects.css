@@ -68,6 +68,14 @@ hr {
   background-color: #6068563f;
 }
 
+/* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+  .link-primary {
+    display: block;
+  }
+}
+
+
 /** look into BEM naming convention for CSS **/
 
 /** lists **/
@@ -225,10 +233,3 @@ hr {
   .container-center {
     width: auto;
   }
-
-/* Media Query for Mobile Devices */
- @media (max-width: 480px) {
-  .link-primary {
-    display: block;
-  }
-}

@@ -43,11 +43,11 @@ hr {
 
 .link-primary {
   max-width: 140px;
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
   background-color: var(--primary-color);
   color: #fff;
-  border-radius: 2rem;
   transition: 0.8s;
 }
 

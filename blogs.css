@@ -88,6 +88,9 @@ hr {
 .list-non-bullet > li > article > p {
   text-align: left;
 }
+.list-non-bullet > li > article > p {
+  padding-left: 11px;
+}
 .list-item-inline {
   display: inline;
   padding: 0rem 0.5rem;

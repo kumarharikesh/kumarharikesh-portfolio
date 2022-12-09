@@ -83,7 +83,9 @@ hr {
   list-style: none;
   padding-inline-start: 0px;
 }
-.list-non-bullet > li > article {
+.list-non-bullet > li > article > h1,
+.list-non-bullet > li > article > div,
+.list-non-bullet > li > article > p {
   text-align: left;
 }
 .list-item-inline {

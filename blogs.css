@@ -34,6 +34,11 @@ hr {
   margin: auto;
 }
 
+/** links color for blog1, blog2, blog3 **/
+#link {
+  color: var(--primary-color);
+}
+
 /** links **/
 .link {
   box-sizing: border-box;

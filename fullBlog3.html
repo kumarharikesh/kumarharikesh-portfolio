@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="blogs.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/image/harry-logo.svg">
+    <title>Blogs3 | Harikesh Patel</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+      .navigation .nav-brand >a {
+        color: inherit;
+        font-family: 'Stalinist One', cursive;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-brand">
+        <a href="http://harrystyle.000webhostapp.com/" target="_blank">
+          Harikesh Patel</a
+        >
+      </div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="index.html">Home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="blogs.html">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1 class="hero-heading">
+        <!-- Blog on <span class="heading-inverted">Hadoop: word-count</span> -->
+        Blog on <span class="heading-inverted">''''''''''''</span>
+      </h1>
+    </header>
+
+    <ul class="list-non-bullet">
+      <li>
+        <article class="showcase-list container container-center">
+          <!-- <h1>word-count class: Have a look below</h1> -->
+          <h1>Have a look below</h1>
+          <small><span>&nbsp;</span>Last updated on December, 2022</small>      
+          <p>
+            import java.io.IOExeption;
+            import java.util.StringTokenizer;
+            import org.apache.hadoop.fs.Path;
+            import org.apache.hadoop.io.Text;
+            import org.apache.hadoop.io.IntWritable;
+            import org.apache.hadoop.mapreduce.Job;
+            import org.apache.hadoop.mapreduce.Mapper;
+            import org.apache.hadoop.mapreduce.Reducer;
+            import org.apache.hadoop.conf.Configuration;
+            import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+            import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+          </p>
+          <p>
+            It is been said that the second version of the movie has made a business of ₹5 billion (US$74 million) even before its release.
+          </p>
+          <p>
+            
+public class wordCount{
+    public static class TokenizerMapper extends Mapper<Object, Text, Text, IntWritable>{
+
+        private final static IntWritable one = new IntWritable(1);
+        private Text word = new Text();
+
+        public void map(Object key, Text value, Context context) throws IOExeption, InterruptedException{
+            StringTokenizer itr = new StringTokenizer(value.toString());
+            while(itr.hasMoreTokens()){
+                word.set(itr.nextToken());
+                context.write(word, one);
+            }
+        }
+
+    }
+
+    public static class IntSumReducer extends Reducer<Text, IntWritable, Text, IntWritable>{
+
+        private  IntWritable result = new IntWritable(1);
+
+        public void reduce(Text key, Iterable<IntWritable> value, Context context) throws IOExeption, InterruptedException{
+            int sum = 0;
+            for(IntWritable val : values){
+                sum += val.get();
+            }
+            result.set(sum);
+            context.write(key, result);
+        }
+
+    }
+
+    public static void main(String[args]) throws Exception {
+        Configuration conf = new Configuration();
+        Job job = Job.getInstance(conf, "word count");
+        job.setJarByClass(wordCount.class);
+        job.setMapperClass(TokenizerMapper.class);
+        job.setCombinerClass(IntSumReducer.class);
+        job.setReducerClass(IntSumReducer.class);
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(IntWritable.class);
+        FileInputFormat.addOutputPath(job, new Path(args[0]));
+        FileOutputFormat.setInputPath(job, new Path(args[1]));
+        System.exit(job.waitForCompletion(true) ? 0 : 1);
+    }
+
+}
+          </p>
+          <p>
+            Reach out to my Quora profile for more such contents <a href="https://www.quora.com/profile/Harikesh-Patel-7" target="_blank">Harikesh Patel</a> and follow.
+          </p>
+          <br>
+          <div class="reply">
+            <small>Thank you for reading.</small>
+          </div>
+
+        </article>
+      </li>
+    </ul>
+
+    <footer class="footer">
+      <div class="footer-header">Connect with me</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/kumarharikesh/" target="_blank"> Github </a>
+        </li><span style="color: rgba(205, 200, 200, 0.85);">|</span>
+        <li class="list-item-inline">
+          <a class="link" href="https://www.hackerrank.com/Harikesh_Patel/" target="_blank"> HackerRank </a>
+        </li><span style="color: rgba(205, 200, 200, 0.85);">|</span>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/Harikes49467657/" target="_blank"> Twitter </a>
+        </li><span style="color: rgba(205, 200, 200, 0.85);">|</span>
+        <li class="list-item-inline">
+          <a class="link" href="https://www.linkedin.com/in/harikesh-patel-357171191/" target="_blank">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+      <small>© HarryStyle. All rights reserved</small>
+    </footer>
+  </body>
+</html>

@@ -83,10 +83,10 @@ hr {
   padding-inline-start: 0px;
 }
 
-/* .list-item-inline {
+.list-item-inline {
   display: inline;
   padding: 0rem 0.5rem;
-} */
+}
 
 /** navigation **/
 .navigation {

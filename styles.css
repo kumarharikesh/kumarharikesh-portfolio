@@ -227,11 +227,6 @@ hr {
 .showcase-list p {
   padding-bottom: 1rem;
 }
-
-.list-non-bullet {
-  list-style: none;
-  padding-inline-start: 0px;
-}
 .showcase-list > h1,
 .showcase-list > p {
   text-align: left;
@@ -239,11 +234,6 @@ hr {
 .showcase-list > p {
   padding-left: 11px;
 }
-
-.list-item-inline {
-  display: inline;
-  padding: 0rem 0.5rem;
+.container-center {
+  width: auto;
 }
- .container-center {
-    width: auto;
-  }

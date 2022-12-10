@@ -78,7 +78,7 @@ hr {
 
 /** lists **/
 
-.list-non-bullet {
+/* .list-non-bullet {
   list-style: none;
   padding-inline-start: 0px;
 }
@@ -86,7 +86,7 @@ hr {
 .list-item-inline {
   display: inline;
   padding: 0rem 0.5rem;
-}
+} */
 
 /** navigation **/
 .navigation {
@@ -226,13 +226,11 @@ hr {
 
 .showcase-list p {
   padding-bottom: 1rem;
+  padding-left: 11px;
 }
 .showcase-list > h1,
 .showcase-list > p {
   text-align: left;
-}
-.showcase-list > p {
-  padding-left: 11px;
 }
 .container-center {
   width: auto;

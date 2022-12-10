@@ -248,3 +248,6 @@ hr {
   display: inline;
   padding: 0rem 0.5rem;
 }
+ .container-center {
+    width: auto;
+  }

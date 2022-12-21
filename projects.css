@@ -112,6 +112,7 @@ hr {
   color: #454545;
   text-shadow: 0 1px 0 white;
   padding: 1rem;
+  border-bottom: 3px solid black;
 }
 
 .navigation .nav-pills {
